@@ -99,8 +99,5 @@ elif wybor == str(6):  # Liczba π
     tak = time.perf_counter()
     print(f'Ukonczono w {tak - tik:0.4f} sekund.')
     input('Wcisnij dowolny klawisz aby zakonczyc.')
-elif wybor == str(69):
-    print('No wiesz co? Zboczuch. ʕ-ᴥ-ʔ')
-    input('Podano niepoprawna wartosc. Sprobuj jeszcze raz, uruchamiajac ponownie program.')
 else:
     input('Podano niepoprawna wartosc. Sprobuj jeszcze raz, uruchamiajac ponownie program.')
