@@ -1,7 +1,4 @@
-import arcade.application
-import arcade.window_commands
-import arcade.draw_commands
-import arcade.text
+import arcade
 from mpmath import mp
 import time
  
