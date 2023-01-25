@@ -45,7 +45,7 @@ def option1(): # Drawing a linear function
     function = 'y=' + a + 'x+' + b
     print(function)
     # Drawing function
-    arcade.open_window(600, 600, 'Wykres funkcji ' + function)
+    arcade.open_window(600, 600, 'Graph of the function ' + function)
     arcade.set_background_color(arcade.color.WHITE)
     arcade.start_render()
     draw_axes()
