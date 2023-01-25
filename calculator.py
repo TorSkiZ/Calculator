@@ -20,16 +20,15 @@ def draw_function(a: int, b: int):
     arcade.draw_line(x1, y1, x2, y2, arcade.color.RED, 3)
 
 def menu():
-    print('Program rozwiazujacy rodzaj obliczen podany przez uzytkownika.')
-    print('Autor: Wiktor Wasinski')
+    print('A program that solves the type of calculation given by the user.')
+    print('Author: Wiktor Wasinski')
     print('')
-    print('1 - rysowanie funkcji liniowej')
-    print('2 - czy funkcje liniowe sa prostopadle?')
-    print('3 - czy funkcje liniowe sa rownolegle?')
-    print('4 - punkt przeciecia funkcji liniowych (wkrotce)')
-    print('5 - funkcja liniowa jest stala, rosnaca czy malejaca?')
-    print('6 - liczba π')
-    option = int(input('Wybierz rodzaj obliczen: '))
+    print('1 - drawing a linear function')
+    print('2 - are linear functions perpendicular?')
+    print('3 - are the linear functions parallel?')
+    print('4 - is the linear function constant, increasing or decreasing?')
+    print('5 - print π')
+    option = int(input('Choose the type of calculation: '))
     print('')
     match option:
         case 1: option1()
@@ -37,17 +36,16 @@ def menu():
         case 3: option3()
         case 4: option4()
         case 5: option5()
-        case 6: option6()
         case _: invalid_option()
 
-def option1(): # Rysowanie funkcji liniowej
-    # Wprowadzanie wspolczynnikow
-    a = input('Wprowadz "a": ')
-    b = input('Wprowadz "b": ')
-    funkcja = 'y=' + a + 'x+' + b
-    print(funkcja)
-    # Rysowanie funkcji
-    arcade.open_window(600, 600, 'Wykres funkcji ' + funkcja)
+def option1(): # Drawing a linear function
+    # Input of coefficients
+    a = input('Enter "a": ')
+    b = input('Enter "b": ')
+    function = 'y=' + a + 'x+' + b
+    print(function)
+    # Drawing function
+    arcade.open_window(600, 600, 'Wykres funkcji ' + function)
     arcade.set_background_color(arcade.color.WHITE)
     arcade.start_render()
     draw_axes()
@@ -55,71 +53,67 @@ def option1(): # Rysowanie funkcji liniowej
     arcade.finish_render()
     arcade.run()
 
-def option2():  # Czy funkcje liniowe sa prostopadle?
-    # Wprowadzanie wspolczynnikow
-    a1 = input('Wprowadz "a1": ')
-    b1 = input('Wprowadz "b1": ')
-    a2 = input('Wprowadz "a2": ')
-    b2 = input('Wprowadz "b2": ')
-    funkcja1 = 'y=' + a1 + 'x+' + b1
-    print(funkcja1)
-    funkcja2 = 'y=' + a2 + 'x+' + b2
-    print(funkcja2)
-    # Czy funkcje liniowe sa prostopadle?
+def option2():  # Are linear functions perpendicular?
+    # Input of coefficients
+    a1 = input('Enter "a1": ')
+    b1 = input('Enter "b1": ')
+    a2 = input('Enter "a2": ')
+    b2 = input('Enter "b2": ')
+    function1 = 'y=' + a1 + 'x+' + b1
+    print(function1)
+    function2 = 'y=' + a2 + 'x+' + b2
+    print(function2)
+    # Are linear functions perpendicular?
     if float(a1) * float(a2) == -1:
-        print('Funkcje sa prostopadle.')
+        print('The functions are perpendicular.')
     else:
-        print('Funkcje nie sa prostopadle.')
-    input('Wcisnij dowolny klawisz aby zakonczyc.')
+        print('The functions are not perpendicular.')
+    input('Press any key to finish.')
 
-def option3():  # Czy funkcje liniowe sa rownolegle?
-    # Wprowadzanie wspolczynnikow
-    a1 = input('Wprowadz "a1": ')
-    b1 = input('Wprowadz "b1": ')
-    a2 = input('Wprowadz "a2": ')
-    b2 = input('Wprowadz "b2": ')
-    funkcja1 = 'y=' + a1 + 'x+' + b1
-    print(funkcja1)
-    funkcja2 = 'y=' + a2 + 'x+' + b2
-    print(funkcja2)
-    # Czy funkcje liniowe sa rownolegle?
+def option3():  # Are the linear functions parallel?
+    # Input of coefficients
+    a1 = input('Enter "a1": ')
+    b1 = input('Enter "b1": ')
+    a2 = input('Enter "a2": ')
+    b2 = input('Enter "b2": ')
+    function1 = 'y=' + a1 + 'x+' + b1
+    print(function1)
+    function2 = 'y=' + a2 + 'x+' + b2
+    print(function2)
+    # Are the linear functions parallel?
     if a1 == a2 and b1 == b2:
-        print('Funkcje pokrywaja sie.')
+        print('The functions overlap.')
     elif a1 == a2:
-        print('Funkcje sa rownolegle.')
+        print('The functions are parallel.')
     else:
-        print('Funkcje nie sa rownolegle.')
-    input('Wcisnij dowolny klawisz aby zakonczyc.')
+        print('The functions are not parallel.')
+    input('Press any key to finish.')
 
-def option4():  # Punkt przeciecia funkcji liniowych
-    # TODO
-    input('Wkrotce...')
-
-def option5():  # Funkcja liniowa jest stala, rosnaca czy malejaca?
-    # Wprowadzanie wspolczynnikow
-    a = input('Wprowadz "a": ')
-    b = input('Wprowadz "b": ')
-    funkcja = 'y=' + a + 'x+' + b
-    print(funkcja)
-    # Funkcja liniowa jest stala, rosnaca czy malejaca?
+def option4():  # Is the linear function constant, increasing or decreasing?
+    # Input of coefficients
+    a = input('Enter "a": ')
+    b = input('Enter "b": ')
+    function = 'y=' + a + 'x+' + b
+    print(function)
+    # Is the linear function constant, increasing or decreasing?
     if float(a) > 0:
-        print('Funkcja jest rosnaca.')
+        print('The function is increasing.')
     elif float(a) < 0:
-        print('Funkcja jest malejaca.')
+        print('The function is decreasing.')
     else:
-        print('Funkcja jest stala.')
-    input('Wcisnij dowolny klawisz aby zakonczyc.')
+        print('The function is constant.')
+    input('Press any key to finish.')
 
-def option6():  # Liczba π
-    dokladnosc = input('Wprowadz liczbe cyfr do wyswietlenia: ')
-    mp.dps = int(dokladnosc)
+def option5():  # Print π
+    accuracy = input('Enter the number of digits to be displayed: ')
+    mp.dps = int(accuracy)
     tik = time.perf_counter()
     print('π=' + str(mp.pi))
-    tak = time.perf_counter()
-    print(f'Ukonczono w {tak - tik:0.4f} sekund.')
-    input('Wcisnij dowolny klawisz aby zakonczyc.')
+    tok = time.perf_counter()
+    print(f'Finished in {tok - tik:0.4f} second(s).')
+    input('Press any key to finish.')
 
 def invalid_option():
-    input('Podano niepoprawna wartosc. Sprobuj jeszcze raz, uruchamiajac ponownie program.')
+    input('Invalid value. Try again.')
 
 menu() # <--- Here start program
