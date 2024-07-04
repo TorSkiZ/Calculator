@@ -27,7 +27,7 @@ This repository contains a simple Python script that provides various functional
 ## Installation
 1. Clone the Repository
 ```
-git clone https://github.com/your-username/calculator.git
+git clone https://github.com/TorSkiZ/calculator.git
 cd Calculator
 ```
 2. Install Dependencies
