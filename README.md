@@ -1,5 +1,5 @@
 # Overview
-This repository contains a simple Python program that provides various functionalities related to linear functions and the mathematical constant π (pi). The program offers a text-based menu through which users can perform different calculations and visualizations.
+This repository contains a simple Python script that provides various functionalities related to linear functions and the mathematical constant π (pi). The script offers a text-based menu through which users can perform different calculations and visualizations.
 
 ## Table of Contents
 - [Features](#features)
@@ -35,7 +35,7 @@ pip install arcade mpmath
 ```
 
 ## Usage
-1. Run the Program:
+1. Run the Script:
 ```
 python calculator.py
 ```
@@ -51,19 +51,19 @@ python calculator.py
 
 2. Are Linear Functions Perpendicular?:
    - Enter the coefficients a1, b1 for the first function and a2, b2 for the second function.
-   - The program will output whether the functions are perpendicular.
+   - The script will output whether the functions are perpendicular.
 
 3. Are Linear Functions Parallel?:
    - Enter the coefficients a1, b1 for the first function and a2, b2 for the second function.
-   - The program will output whether the functions are parallel or overlapping.
+   - The script will output whether the functions are parallel or overlapping.
 
 4. Is the Linear Function Constant, Increasing, or Decreasing?:
    - Enter the coefficients a and b.
-   - The program will indicate whether the function is constant, increasing, or decreasing.
+   - The script will indicate whether the function is constant, increasing, or decreasing.
 
 5. Print π:
    - Enter the number of decimal places to display.
-   - The program will print π to the specified accuracy and the time taken for the calculation.
+   - The script will print π to the specified accuracy and the time taken for the calculation.
 
 ## Code Structure
 - `draw_axes()`: Draws the coordinate axes for the graph.
