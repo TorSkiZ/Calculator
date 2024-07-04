@@ -27,8 +27,8 @@ This repository contains a simple Python script that provides various functional
 ## Installation
 1. Clone the Repository
 ```
-git clone https://github.com/your-username/repo-name.git
-cd calculator
+git clone https://github.com/your-username/calculator.git
+cd Calculator
 ```
 2. Install Dependencies
 ```
@@ -38,7 +38,7 @@ pip install arcade mpmath
 ## Usage
 1. Run the Script:
 ```
-python calculator.py
+python main.py
 ```
 
 2. Select an Option:
