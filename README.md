@@ -10,6 +10,7 @@ This repository contains a simple Python script that provides various functional
 - [Code Structure](#code-structure)
 - [Contributing](#contributing)
 - [License](#license)
+- [Contact](#contact)
 
 ## Features
 - Drawing a Linear Function: Visualizes a linear function based on user-provided coefficients.
