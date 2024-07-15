@@ -21,7 +21,7 @@ def draw_function(a: int, b: int):
 
 def menu():
     print('A program that solves the type of calculation given by the user.')
-    print('Author: Wiktor Wasinski')
+    print('Author: Wiktor Wasiński (TorSkiZ)')
     print('')
     print('1 - drawing a linear function')
     print('2 - are linear functions perpendicular?')
