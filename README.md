@@ -25,23 +25,36 @@ This repository contains a simple Python script that provides various functional
 - `mpmath` library
 
 ## Installation
+### For Debian 12 Bookworm and similar
 1. Clone the Repository
 ```
 git clone https://github.com/TorSkiZ/calculator.git
-cd Calculator
+cd calculator
 ```
-2. Install Dependencies
+
+2. Setup a Virtual Environment
+```
+sudo apt install python[x.xx]-venv (x.xx - Your version of Python)
+python3 -m venv venv
+```
+
+3. Install Dependencies
 ```
 pip install arcade mpmath
 ```
 
 ## Usage
-1. Run the Script:
+1. Enter the Virtual Environment:
 ```
-python main.py
+source venv/bin/activate
 ```
 
-2. Select an Option:
+2. Run the Script:
+```
+python3 main.py
+```
+
+3. Select an Option:
    - Follow the on-screen menu to choose the type of calculation or visualization you want to perform.
    - Enter the required coefficients or values when prompted.
 
