@@ -38,7 +38,12 @@ sudo apt install python[x.xx]-venv (x.xx - Your version of Python)
 python3 -m venv venv
 ```
 
-3. Install Dependencies
+3. Enter the Virtual Environment:
+```
+source venv/bin/activate
+```
+
+4. Install Dependencies
 ```
 pip install arcade mpmath
 ```
